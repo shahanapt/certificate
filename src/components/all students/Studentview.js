@@ -24,7 +24,7 @@ const Studentview = () => {
 
   useEffect(() => {
     dispatch(singleviewApi(params.id));
-  }, [dispatch]);
+  }, [dispatch, params.id]);
 
   const deleteStudent = () => {
     dispatch(deleteStudentApi(params.id, navigate));
@@ -42,8 +42,8 @@ const Studentview = () => {
 
             <Card
               className="cardname"
-              style={{ width: "60%", height: "60%", padding: "25px" }}>
-
+              style={{ width: "60%", height: "60%", padding: "25px" }}
+            >
               <Row>
                 <Col md="6">
                   <h3 className="viewhd">{single.full_name}</h3>
@@ -109,7 +109,7 @@ const Studentview = () => {
               </div>
             </Card>
 
-{/* ...............................bottom cards............................. */}
+            {/* ...............................bottom cards............................. */}
 
             <Row>
               {map(stdv, (item, key) => (
@@ -146,8 +146,7 @@ const Studentview = () => {
               ))}
             </Row>
 
-
-{/*...................bottom button............................. */}
+            {/*...................bottom button............................. */}
 
             <div
               style={{
