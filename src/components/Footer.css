@@ -49,3 +49,41 @@
 .foticon{
     margin-left: 30px;
 }
+
+.groupp{
+    
+        list-style: none;
+        font-size: 13px;
+        line-height: 30px;
+        color: rgb(185, 185, 213);
+
+}
+.footer-main{
+    display: contents;
+}
+
+@media (max-width: 400px) {
+    .footer-right{
+        font-size: 12px;
+    }
+    .footer-left{
+        font-size: 12px;
+        width: 130px;
+    }
+    .footer-main{
+        display: flex;
+    gap: 10px
+    }
+    .group{
+        padding: 0px;
+        margin: 0px;
+    }
+    .groupp{
+        padding: 0px;
+        font-size: 10px;
+    }
+    .foticon{
+        margin: 0px;
+    }
+
+}

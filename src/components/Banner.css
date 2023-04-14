@@ -13,7 +13,7 @@
 
 .banner-left{
     color: white;
-    width: 500px;
+    /* width: 500px; */
     margin-top: 200px;
  
 }
@@ -25,7 +25,7 @@
 
 .banner-left .banpara{
     
-    width:450px;
+    /* width:450px; */
     height: 100px;
     padding-top: 100px;
     line-height: 22px;
@@ -49,3 +49,81 @@
     width: 2px;
     margin-top: 150px;
 }
+.main-flex{
+    gap: 150px;
+}
+
+@media (max-width: 400px) {
+    .banner-left{
+        /* width: 150px; */
+    margin-top: 50px;
+
+    }
+    .banner-left .banbutton{
+        margin-top: 40px;
+    }
+    .banner-left .banpara{
+        padding-top: 40px;
+    }
+    .main-flex{
+        flex-direction: column;
+    }
+    .banner-right{
+        margin-top: 10px;
+    }
+    .banner-image{
+        width: 253px;
+    /* margin-bottom: 225px; */
+    margin-top: -125px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .banner-left{
+        /* width: 150px; */
+    margin-top: 100px;
+
+    }
+    .banner-left .banbutton{
+        margin-top: 60px;
+    }
+    .banner-left .banpara{
+        padding-top: 60px;
+    }
+    .main-flex{
+        flex-direction: column;
+    }
+    .banner-right{
+        margin-top: 20px;
+    }
+    .banner-image{
+        width: 325px;
+    /* margin-bottom: 225px; */
+    margin-top: -125px;
+    }
+  }
+  
+  /* @media (max-width: 920px) {
+    .banner-left{
+   
+    margin-top: 100px;
+
+    }
+    .banner-left .banbutton{
+        margin-top: 60px;
+    }
+    .banner-left .banpara{
+        padding-top: 60px;
+    }
+    .main-flex{
+        flex-direction: column;
+    }
+    .banner-right{
+        margin-top: 20px;
+    }
+    .banner-image{
+        width: 625px;
+    margin-top: -125px;
+    }
+  }
+   */
